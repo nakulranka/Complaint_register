@@ -1,0 +1,10 @@
+1st terminal :
+
+mvn clean compile
+mvn jetty:run  
+
+2nd terminal:
+
+mvn clean install    
+mvn dependency:copy-dependencies        
+ java -cp "target/classes;target/dependency/*" com.example.admin.AdminDashboard
